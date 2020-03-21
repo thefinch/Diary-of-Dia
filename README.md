@@ -35,7 +35,7 @@ Time passes throughout the game. I’m thinking it will occur over about ten yea
 
 ### Story
 #### The Beginning
-You just got the kids to sleep and you’re adjusting a small shrine you have to your deity. It has a little crystal that starts shining when you adjust it correctly. There’s a sudden, loud thud on the door. Spouse opens the door and tells you to run. You grab the kids, and run to the bank door. You glance man to see spouse and intruder(s) fighting and you see them get hurt (badly) just before you make it out the back. You make it out of town and turn to see a plume of smoke begin to rise. 
+You just got the kids to sleep and you’re adjusting a small shrine you have to your deity. It has a little crystal that starts shining when you adjust it correctly. There’s a sudden, loud thud on the door. Spouse opens the door and tells you to run. You grab the kids, and run to the back door. You glance back to see spouse and intruder(s) fighting and you see them get hurt (badly) just before you make it out the back. You make it out of town and turn to see a plume of smoke begin to rise. 
 
 You’re on your way somewhere far. Possibly a temple to the deity from your altar. Wherever you’re going, you need help to save or revive your spouse. 
 
