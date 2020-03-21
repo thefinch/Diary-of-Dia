@@ -27,7 +27,7 @@ Think Ancient Rome (myths and all) with a color palette I can only describe as �
 - Has a cloak that looks like swirling black water
 
 ### Gameplay
-You make camp every night. Sometimes I’m there’s a fire, sometimes your huddled under shelter when it rains. Each time there’s a small bit of conversation or moment shared between the family members. 
+You make camp every night. Sometimes there’s a fire, sometimes you're huddled under shelter when it rains. Each time there’s a small bit of conversation or moment shared between the family members. 
 
 The owl is always around at night. Possibly you can interact with it to save the game. Either that or autosave each night. Story could be on rails with days being individual levels or open world exploration. Depends on how many nightly events we can come up with. 
 
