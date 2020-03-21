@@ -5,7 +5,7 @@ Need something to do while you're stuck at home because of the coronavirus? How 
 ## Rough Ideas To Get Started
 
 ### Setting
-Think Ancient Rome (myths and all) with a color palette I can only describe as “late afternoon in Breath of the Wild.” If e we go 3D then we can explore a cel shaded style. Otherwise lean into a Samurai Jack aesthetic. 
+Think Ancient Rome (myths and all) with a color palette I can only describe as “late afternoon in Breath of the Wild.” If we go 3D then we can explore a cel shaded style. Otherwise lean into a Samurai Jack aesthetic. 
 
 ### Characters
 #### Mom
