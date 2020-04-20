@@ -33,32 +33,51 @@ The look can be described as a "late afternoon Breath of the Wild" color scheme 
 The main mode of active player interaction with the game will consist of:
 - An as of yet undetermined number of setpiece battles with monsters or people as the circumstances would have them. There will likely be some unique mechanics per battle (ex. climb to higher ground if you're fighting a giant cyclops).
 - Finding particular people/items. These should be deduced from hints dropped throughout the game. The end goal is likely to appease a diety in some way and part of that process will probably involve needing to collect precious items. I hate fetch quests so preferably the items will have a more tangible effect. They could possibly grant some new abilities or unlock new areas. Just...no "go collect 10 boar skins" "thanks, here's your gold" please. If we're collecting boar skins then we better be putting them to use. Maybe they're used to create warmer clothes so we can go explore a colder climate. Everything has a purpose. Chekhov's gun and all that.
+- Puzzle solving will likely be a requirement for accessing particular areas. There's likely a series of items selections/specific movements required to get into a shrine, out or imprisonment, through a dungeon, etc.
 
 #### 3.1.1.  Game Progression
+Game progression will be mostly linear, mission based, marked by a clear day/night cycle in between major events. There may be some side digressions to learn more about the characters and lore, but the end goal should be ever-present and should poke and prod the player to continue if they're taking too long.
 
 #### 3.1.2.  Mission/challenge Structure
+The missions should be built in order to highlight at least one of the following:
+- a character's ability
+- personality traits, with slightly more emphasis on negative ones (the goal is to display the hardship that the family must endure)
+- a goal point (getting a particular item, starving the enemy of resources, defeating a particular foe)
 
 #### 3.1.3.  Puzzle Structure
+Puzzle structure will likely be unique in each instance. The game should not feel repetitive and puzzles should be just a prevalent as fighting or dialog trees. Puzzles should serve a purpose to the plot instead of existing purely to test the player's logical prowess.
 
 #### 3.1.4.  Objectives – What are the objectives of the game?
+The point of the game is to observe the difficulties faced by a family and see how they can be overcome. We're not here to make leaderboards with high scores or to create the most gruesome killcams. We're here to tell a story and get the player to form an attachment to the characters. They should want they characters to resolve their conflicts; they should want to see the family reunited; they should want the children to grow into good people.
 
 #### 3.1.5.  Play Flow – How does the game flow for the game player
+We're looking for multiple [Man in Hole](http://www.openculture.com/2014/02/kurt-vonnegut-masters-thesis-rejected-by-u-chicago.html) scenarios to keep attention and emotions ebbing and flowing.
 
 ### 3.2.    Mechanics – What are the rules to the game, both implicit and explicit.  This is the model of the universe that the game works under.  Think of it as a simulation of a world, how do all the pieces interact?  This actually can be a very large section.
 
 #### 3.2.1.  Physics – How does the physical universe work?
+Everything works as expected. Gravity, math, and all the fun stuff is still there. There are unique and/or unnatural beings that may bend or break rules though. More to come as those things are specified.
 
 #### 3.2.2.  Movement in the game
+Normally we're looking at freely moving left and right with jumping, ducking, rolling, climbing, swimming, etc. as necessary to navigate the environment.
 
 #### 3.2.3.  Objects – how to pick them up and move them
+Most objects will likely be unique items that grant a new ability/appearance to a character. Outside of that there will probably be items to pick up and save in an inventory, though inventory management is not going to happen. Think of just about everything as a key item required for progression.
 
 #### 3.2.4.  Actions, including whatever switches and buttons are used, interacting with objects, and what means of communication are used
+TBA based on what is called for by the story.
 
 #### 3.2.5.  Combat – If there is combat or even conflict, how is this specifically modeled?
+Depends on the situation. Since each situation should be unique there will likely be times that you're fighting hand-to-hand, times when you're manning the cannons on a ship, climbing and stabbing Shadow of the Collosus style, aiming with a bow, etc. As the story is approved we'll have more to define here.
 
 #### 3.2.6.  Economy – What is the economy of the game? How does it work?
+There's a currency used by the majority of the people you interact with, but what's worth more is your relationships built with these people. For instance, you want a particular merchant to decide to expand in a province that will help the your side more than your enemy. He could be bribed for a large amount of money or you could do a favor or two for him to grease the wheels a bit.
 
 #### 3.2.7.  Screen Flow -- A graphical description of how each screen is related to every other and a description of the purpose of each screen.
+Home Screen: where you start the game. There's a new game button and a load button.
+Cutscene Screen: A cutscene will be loaded and played. Give the player a skip button after they've seen it once.
+Mission Screen: UI changes per mission.
+Night Screen: Dialog flows with occasional buttons to show choices for the characters.
 
 ### 3.3.    Game Options – What are the options and how do they affect game play and mechanics?
 
