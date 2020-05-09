@@ -80,16 +80,19 @@ Mission Screen: UI changes per mission.
 Night Screen: Dialog flows with occasional buttons to show choices for the characters.
 
 ### 3.3.    Game Options – What are the options and how do they affect game play and mechanics?
+For the most part, dialog is where options are presented and explored. If possible, there should be at least two ways of proceeding through a conversation. We have the "intended experience" where the family encounters difficulties but finds a way to overcome and comes out better for it, but we should allow some wiggle room for player agency. For example, let's say that Esta starts talking back to Dia (because, you know, she'll be a teenager at points in this game). Dia is under immense pressure at pretty much all times so it's entirely reasonable that she might snap back at some point. I don't think these moments should drastically change the outcome of the game, but they can make for differing levels of anxiety, anger, and ultimately closure by the end. The intended experience would be everyone is more or less relieved at the end, but if the player chooses a few too many of the alternate options by the end the charcter may be wondering if it was worth it all.
 
 ### 3.4.    Replaying and Saving
+Replaying should be used to explore different story options if there are any. We're not out to create a new game plus mode with hours and hours of replay value. Remember: we're here to tell a story and tell it well. As for saving, we all have busy lives. The player should be able to save and reload from just about any point.
 
 ### 3.5.    Cheats and Easter Eggs
+There should not be any cheats. Easter eggs should not be related to the game if possible. Like, I don't want to have the player be able to glitch past a barrier if they press buttons a weird way and there's a strange item that may or may not confirm some strange fan theory. That's not what this game is about. Stick to hiding shoutouts to loved ones or something like that.
 
 ## 4.  Story, Setting and Character
 
 ### 4.1.    Story and Narrative – Includes back story, plot elements, game progression, and cut scenes.  Cut scenes descriptions include the actors, the setting, and the storyboard or script.
 
-###4.2.    Game World
+### 4.2.    Game World
 
 #### 4.2.1.  General look and feel of world
 
@@ -124,9 +127,13 @@ Night Screen: Dialog flows with occasional buttons to show choices for the chara
 ## 8.  Technical
 
 ### 8.1.    Target Hardware
+We're aiming at being able to run on any modern browser. If the browser supports HTML5, we should be able to run there.
 
 ### 8.2.    Development hardware and software, including Game Engine
+Engine: [Phaser](https://phaser.io/)
 
 ### 8.3.    Network requirements
+Slightly more than nothing. IF you can connect to the internet, you should be able to run this game.
 
 ## 9.  Game Art – Key assets, how they are being developed.  Intended style.
+Until concept art starts rolling in, we're looking at a style akin to Samurai Jack in terms of deliberate simplicity, sharp contrasts, and smooth movements. The general color scheme should be reminiscent of late afternoon in Breath of the Wild.
