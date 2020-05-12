@@ -1,3 +1,5 @@
+import Button from "./Button.js";
+
 export default class Popup extends Phaser.GameObjects.Rectangle {
 	constructor(scene, config) {
 		super(scene, 400, 300, 600, 500, 0x333333);
@@ -43,31 +45,13 @@ export default class Popup extends Phaser.GameObjects.Rectangle {
 	remove() {
 		this.title.destroy();
 		this.closeBtn.destroy();
-		this.children.forEach(el => el.destroy());
+		this.children.forEach(el => el.remove());
 		this.destroy();
 	}
 }
 
 function addButton(scene, popup, title, clickCallback, position) {
-	let button = scene.add.text(position.x, position.y, title, {
-		fontSize: "32px",
-		fontFamily: "Night Machine"
-	});
-	button.setData("canClick", true);
-
-	button.setInteractive({ useHandCursor: true }).setOrigin(0.5, 0.5);
-
-	button.on("pointerdown", (pointer, localX, localY, event) => {
-		if (button.getData("canClick")) {
-			button.setData("canClick", false);
-			clickCallback();
-			scene.time.delayedCall(1000, () => button.setData("canClick", true)); // To prevent player from saving/loading data multiple times in a single long click
-		}
-		
-	});
-
-	button.on("pointerover", (pointer, localX, localY, event) => button.setColor("#999999"));
-	button.on("pointerout", (pointer, localX, localY, event) => button.setColor("#ffffff"));
+	let button = new Button(scene, position.x, position.y, title, () => {clickCallback()});
 
 	popup.children.push(button);
 }

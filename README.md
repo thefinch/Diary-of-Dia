@@ -27,6 +27,8 @@ Follow these steps to run the game locally:
 - Run `npm run start` (Make sure you have you have [set up  your project](#setting-up-the-project))
 - This might open up your default browser after it has finished compiling, if not then open a browser and go to [http://localhost:8080](http://localhost:8080)
 
+**NOTE** - The Game uses [Night Machine](https://www.dafont.com/night-machine.font) font at many places, it is recommended to download and install the font.
+
 ## Available commands
 
 - `npm run start`

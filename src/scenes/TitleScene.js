@@ -1,5 +1,6 @@
 // Objects
 import Popup from "../objects/Popup.js";
+import Button from "../objects/Button.js";
 
 // Variables
 var gameData = {
@@ -27,45 +28,36 @@ export default class TitleScene extends Phaser.Scene {
 
 
 		// Start Button
-		let startBtn = this.add.text(266, 450, "Start", { fontSize: "48px", fontFamily: "Night Machine" });
-		startBtn.setInteractive({ useHandCursor: true }).setOrigin(0.5, 0.5);
-
-		// Start Button Touch/Mouse Events
-		startBtn.on("pointerdown", (pointer, localX, localY, event) => {
+		let startBtn = new Button(this, 266, 450, "New Game", (pointer, localX, localY, event) => {
     		console.log("started!");
     		this.scene.restart();
 		});
-		startBtn.on("pointerover", (pointer, localX, localY, event) => startBtn.setColor("#999999"));
-		startBtn.on("pointerout", (pointer, localX, localY, event) => startBtn.setColor("#ffffff"));
-
 
 		// Save/Load Button
-		let saveLoadBtn = this.add.text(532, 450, "Save/Load", { fontSize: "48px", fontFamily: "Night Machine" });
-		saveLoadBtn.setInteractive({ useHandCursor: true }).setOrigin(0.5, 0.5);
-
-		// Save/Load Button Touch/Mouse Events
-		saveLoadBtn.on("pointerdown", (pointer, localX, localY, event) => {
+		let loadBtn = new Button(this, 532, 450, "Load", (pointer, localX, localY, event) => {
 			let popupConfig = {
-				title: "Save/Load",
+				title: "Load",
 				children: [
 					{
-						title: "Save",
+						title: "Slot1",
 						type: "Button",
-						clickCallback: () => {saveData()} // Function to call on click
+						clickCallback: () => {loadData(this, 1)} // Function to call on click
 					},
 					{
-						title: "Load",
+						title: "Slot2",
 						type: "Button",
-						clickCallback: () => {loadData()} // Function to call on click
+						clickCallback: () => {loadData(this, 2)} // Function to call on click
+					},
+					{
+						title: "Slot3",
+						type: "Button",
+						clickCallback: () => {loadData(this, 3)} // Function to call on click
 					}
 				],
-				buttons: 2
+				buttons: 3
 			};
 			let popup = new Popup(this, popupConfig);
 		});
-		saveLoadBtn.on("pointerover", (pointer, localX, localY, event)=> saveLoadBtn.setColor("#999999"));
-		saveLoadBtn.on("pointerout", (pointer, localX, localY, event) => saveLoadBtn.setColor("#ffffff"));
-
 
 	}
 
@@ -75,12 +67,50 @@ export default class TitleScene extends Phaser.Scene {
 
 }
 
-function saveData() {
+function saveData(slot) {
 	localStorage.setItem("dia.data", JSON.stringify(gameData)); // Using a . in key creates a namespace and prevents other sites from overwriting this key
-	console.log(localStorage.getItem("dia.data"));
+	console.log(localStorage.getItem(`dia.data${slot}`));
 }
 
-function loadData() {
-	gameData = JSON.parse(localStorage.getItem("dia.data"));
-	console.log(gameData);
+function loadData(scene, slot) {
+	let recievedData = JSON.parse(localStorage.getItem(`dia.dataSlot${slot}`));
+
+	// Check if any data is saved
+	if (recievedData) {
+		gameData = recievedData;
+		console.log(gameData);
+	} else {
+		console.log("No Data Found!");
+		let loadWarnText = new FadingText(scene, 400, 144, "No Data Found!", {
+			color: "#fff",
+			fontSize: "32px",
+			stroke: '#000',
+    		strokeThickness: 4,
+    		fontFamily: "Night Machine"
+		});
+	}
+		
+}
+
+class FadingText extends Phaser.GameObjects.Text {
+	constructor(scene, x, y, text, style) {
+        super(scene, x, y, text, style);
+        scene.add.existing(this);
+
+        this.setOrigin(0.5, 0.5);
+
+        let timer = scene.time.addEvent({
+		    delay: 10,                // ms
+		    callback: () => this.changeOpacity(),
+		    repeat: 20
+		});
+    }
+
+    changeOpacity() {
+    	this.setAlpha(this.alpha -= 0.05);
+    	if (this.alpha <= 0) {
+    		this.destroy();
+    	}
+    }
+
 }
